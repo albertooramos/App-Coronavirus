@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="logo"><img class="log" alt="Brand" src="assets/favicon.jpg"> </li>
+    <li class="nav-item">
+        <a routerLink="alumnos" class="nav-link" routerLinkActive="active">Lista Alumnnos</a>
+    </li>
+    <li class="nav-item">
+        <a routerLink="add" class="nav-link" routerLinkActive="active">Añadir Alumno</a>
+    </li>
+    
+  </ul>
+</nav>
+
+
+<div class="container">
+  <br>
+  <h2 style="text-align: cente;">{{title}}</h2>
+  <hr>  
+  <div class="card">
+    <div class="card-body">
+  <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+      <span>Sagrado Corazón Jesuitas, Logroño, Larioja.</span>
+  </div>
+</footer>

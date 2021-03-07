@@ -1,0 +1,20 @@
+<h2>Alumno Details</h2> 
+
+<hr/>
+<div *ngIf="alumno">
+  <div>
+    <label><b>Nombre: </b></label> {{alumno.Nombre}}
+  </div>
+  <div>
+    <label><b>Apellidos: </b></label> {{alumno.Apellidos}}
+  </div>
+  <div>
+    <label><b>Número Teléfono: </b></label> {{alumno.numeroTelefono}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Volver a la lista de Alumnos</button><br>
+
+
